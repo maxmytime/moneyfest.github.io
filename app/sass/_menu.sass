@@ -1,0 +1,44 @@
+.menu
+    height: 48px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: 33px 0 0 0
+    &__list
+        display: flex
+        list-style-type: none
+        padding: 0
+        margin: 0
+    &__item
+        margin: 0 16px
+        position: relative
+        &_animation
+            &:after
+                content: ''
+                position: absolute
+                bottom: -5px
+                right: 0
+                height: 0
+                width: 100%
+                background-color: $accent
+                z-index: -1
+                transition: 0.3s height ease
+            &:hover:after
+                height: 5px
+            // &:before
+            //     content: ''
+            //     position: absolute
+            //     top: 0
+            //     left: -5px
+            //     height: 40%
+            //     width: 0
+            //     background-color: $accent
+            //     z-index: -1
+            //     transition: 0.3s width ease
+            // &:hover:before
+            //     width: 30%
+        a
+            font-weight: 500
+            font-size: 18px
+            text-decoration: none
+            color: #000
