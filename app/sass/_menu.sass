@@ -25,7 +25,18 @@
                 transition: 0.3s height ease
             &:hover:after
                 height: 5px
-            // &:before
+        &_active
+            &:after
+                content: ''
+                position: absolute
+                bottom: -5px
+                right: 0
+                height: 5px
+                width: 100%
+                background-color: $accent
+                z-index: -1
+                transition: 0.3s height ease
+        // &:before
             //     content: ''
             //     position: absolute
             //     top: 0
