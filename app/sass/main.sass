@@ -29,6 +29,8 @@ body
 .container
     max-width: 1170px
     margin: 0 auto
+    &_text-right
+        text-align: right
 
 .link
     text-decoration: none
@@ -47,11 +49,24 @@ body
 .text-center
     text-align: center
 
+.d-flex
+    display: flex
+
+.align-items-center
+    align-items: center
+
+.justify-content-end
+    justify-content: flex-end
+
+.hidden
+    display: none
+
 b, strong
     font-weight: bold
 
 @import "title"
 @import "button"
+@import "offer"
 @import "menu"
 @import "banner"
 @import "media" // Always at the end

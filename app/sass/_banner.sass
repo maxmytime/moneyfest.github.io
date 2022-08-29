@@ -2,6 +2,7 @@
     margin: 38px 0 0 0
 
 .slider
+    position: relative
     &__item
         height: 568px
         max-width: 100%
@@ -17,6 +18,32 @@
         line-height: 30px
         color: $text
         margin-bottom: 58px
+    .owl-prev
+        position: absolute
+        left: -68px
+        top: 50%
+        transform: translateY(-50%)
+    .owl-next
+        position: absolute
+        right: -68px
+        top: 50%
+        transform: translateY(-50%)
+    .owl-dots
+        text-align: center
+        margin-top: 15px
+    .owl-dot
+        span
+            width: 9px
+            height: 9px
+            background-color: $slider-dot
+            border-radius: 10px
+            display: inline-block
+            margin: 0 9px 0 0
+            transition: 0.3s
+    .owl-dot.active
+        span
+            background: $accent
+            width: 30px
 
 
 
