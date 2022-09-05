@@ -3,7 +3,9 @@
     display: flex
     justify-content: space-between
     align-items: center
-    margin: 33px 0 0 0
+    margin: 0
+    padding-top: 33px
+    background-color: $white
     &__list
         display: flex
         list-style-type: none
@@ -53,3 +55,58 @@
             font-size: 18px
             text-decoration: none
             color: #000
+
+.burger
+    display: none
+
+@media (max-width: 1200px)
+    .container
+        max-width: 960px
+        padding: 0 20px
+
+@media (max-width: 992px)
+    .menu
+        position: relative
+        padding-right: 52px
+        &__list
+            position: absolute
+            display: inline-block
+            width: 100%
+            height: 0
+            overflow: hidden
+            left: 0
+            top: 150%
+            transition: 0.3s
+            z-index: 2
+            background-color: $accent
+            border-radius: 16px
+            &_active
+                padding: 30px 0
+                height: auto
+        &__item
+            text-align: center
+            width: max-content
+            margin: 12px auto
+            &_animation
+                &:after
+                    background-color: $white
+            &_active
+                &:after
+                    background-color: $white
+
+    .burger
+        display: block
+        cursor: pointer
+        position: absolute
+        right: 0
+        bottom: 0
+        transform: translateY(25%)
+
+@media (max-width: 768px)
+    .container
+        max-width: 540px
+        padding: 0 20px
+
+@media (max-width: 576px)
+    .container
+        padding: 0 20px

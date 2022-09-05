@@ -1,0 +1,18 @@
+.form
+    &__input
+        height: 56px
+        background: $white
+        border-radius: 15px
+        margin-bottom: 18px
+        border-color: transparent
+        width: 100%
+        padding: 0 21px
+        &:focus
+            outline: 4px solid $outline-btn
+
+body input:focus:required:invalid, body textarea:focus:required:invalid
+    border-color: transparent
+
+body input:required:valid, body textarea:required:valid
+    border-color: transparent
+

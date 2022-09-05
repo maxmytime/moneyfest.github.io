@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <!-- <base href="/"> -->
 
-    <title>OptimizedHTML 4</title>
-    <meta name="description" content="">
+    <title>MonyFest</title>
+    <meta name="description" content="MonyFest | Учим зарабатывать на криптовалюте с нуля">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -63,7 +63,12 @@
                 </nav>
 
                 <div class="menu__btn">
-                    <a href="#" class="link btn btn__menu btn_yellow">Личный кабинет</a>
+                    <a href="#" data-modal='login' class="link btn btn__menu btn_yellow">Личный кабинет</a>
+                    <a href="#" data-modal='login' class="link btn btn__menu-mobile btn_yellow"></a>
+                </div>
+
+                <div class="burger">
+                    <img src="img/burger.png" alt="Открыть">
                 </div>
 
             </div>
@@ -80,7 +85,7 @@
                         <div class="slider__content">
                             <h1 class="title title_h1">Учим зарабатывать на криптовалюте с нуля</h1>
                             <div class="slider__descr">Онлайн-школа<br> и профессиональное сообщество</div>
-                            <a href="#" class="link btn btn_yellow">Выбрать курс</a>
+                            <a href="#" data-modal='registration' class="link btn btn_yellow">Выбрать курс</a>
 
                         </div>
                         <div class="slider__img">
@@ -95,7 +100,7 @@
                         <div class="slider__content">
                             <h1 class="title title_h1">Учим зарабатывать на криптовалюте с нуля</h1>
                             <div class="slider__descr">Онлайн-школа<br> и профессиональное сообщество</div>
-                            <a href="#" class="link btn btn_yellow">Выбрать курс</a>
+                            <a href="#" data-modal='registration' class="link btn btn_yellow">Выбрать курс</a>
 
                         </div>
                         <div class="slider__img">
@@ -110,7 +115,7 @@
                         <div class="slider__content">
                             <h1 class="title title_h1">Учим зарабатывать на криптовалюте с нуля</h1>
                             <div class="slider__descr">Онлайн-школа<br> и профессиональное сообщество</div>
-                            <a href="#" class="link btn btn_yellow">Выбрать курс</a>
+                            <a href="#" data-modal='registration' class="link btn btn_yellow">Выбрать курс</a>
 
                         </div>
                         <div class="slider__img">
@@ -123,6 +128,7 @@
 
         </div>
     </section>
+
 <!-- Достижения -->
     <section class="achievements">
 
@@ -150,11 +156,116 @@
             </div>
         </div>
 
-
-
     </section>
 
+<!-- Курсы -->
+    <section class="curse">
+        <div class="container">
 
+            <h2 class="title title_h2">Курсы</h2>
+
+            <div class="curse__wrapper">
+
+                <div class="curse__item">
+                    <div class="curse__header">
+                        <div class="curse__time">3 недели</div>
+                    </div>
+                    <div class="curse__body">
+                        <div class="curse__content">
+                            <h4 class="title title_h4 curse__title">Криптоинвестиции: успешный старт</h4>
+                            <p class="curse__descr">Базовые знания для новичков. Поможем разобраться с биржей, купить криптовалюту и совершить первые выгодные сделки с нуля.</p>
+                        </div>
+                        <div class="curse__img">
+                            <img src="img/rocket.png" alt="Ракета" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="curse__footer">
+                        <a href="#" class="link curse__link">Подробнее</a>
+                    </div>
+                </div>
+
+                <div class="curse__item">
+                    <div class="curse__header">
+                        <div class="curse__time">от 2 до 8 месяцев</div>
+                    </div>
+                    <div class="curse__body">
+                        <div class="curse__content">
+                            <h4 class="title title_h4 curse__title">Мастерская трейдинга: практика и заработок</h4>
+                            <p class="curse__descr">Полное погружение в трейдинг: практика работы с профессио-<br>нальными инструментами и стра-<br>тегии для максимальной прибыли.</p>
+                        </div>
+                        <div class="curse__img">
+                            <img src="img/mining.png" alt="Ракета" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="curse__footer">
+                        <a href="#" class="link curse__link">Подробнее</a>
+                    </div>
+                </div>
+
+                <div class="curse__item">
+                    <div class="curse__header">
+                        <div class="curse__time">от 1 месяца</div>
+                    </div>
+                    <div class="curse__body">
+                        <div class="curse__content">
+                            <h4 class="title title_h4 curse__title">Индивидуальное сопро-вождение эксперта</h4>
+                            <p class="curse__descr">Премиальный пакет услуг. Индивидуальные уроки, постоянная связь, консультационное управление.</p>
+                        </div>
+                        <div class="curse__img">
+                            <img src="img/secured.png" alt="Ракета" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="curse__footer">
+                        <a href="#" class="link curse__link">Подробнее</a>
+                    </div>
+                </div>
+
+                <div class="curse__item curse__item_bg-white d-flex flex-direction justify-content-center align-items-center">
+                    <div class="curse__content">
+                        <h4 class="title title_h4 curse__title">Какой выбрать?</h4>
+                    </div>
+                    <div class="curse__footer">
+                        <a href="#" class="link curse__link">Сравнить курсы</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+<!-- Модальные окна -->
+    <div class="overlay">
+
+        <div class="modal modal_theme-money-fest" id="login">
+            <h3 class="title title_h3 modal_title">Вход в личный кабинет</h3>
+            <p class="modal__descr">Для входа в личный кабинет введите ваш логин и пароль</p>
+            <form class="form modal__form" action="#">
+                <input required type="email" class="form__input" placeholder="E-mail">
+                <input required type="password" class="form__input" placeholder="Пароль">
+                <button class="btn btn_black btn_width-100">Войти</button>
+            </form>
+
+            <span class="modal__close">&#10005</span>
+
+        </div>
+
+        <div class="modal modal_theme-money-fest" id="registration">
+            <h3 class="title title_h3 modal_title">Регистрация</h3>
+            <p class="modal__descr">Для регистрации заполните форму, ссылку для поддтверждения регистрации мы отправим на указанный вами e-mail</p>
+            <form class="form modal__form" action="#">
+                <input type="text" class="form__input" placeholder="ФИО">
+                <input type="email" class="form__input" placeholder="E-mail">
+                <input type="text" class="form__input" placeholder="Пароль">
+                <button class="btn btn_black btn_width-100">Войти</button>
+            </form>
+
+            <span class="modal__close">&#10005</span>
+
+        </div>
+
+
+    </div>
 
 
     <script src="js/scripts.min.js"></script>
